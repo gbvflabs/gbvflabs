@@ -1,0 +1,8 @@
+{
+    "name": "frontend-web-mono-repo-v0",
+    "private": true,
+    "scripts": {
+        "sync:init": "pnpm --filter @arc/cli sync:init"
+    }
+    }
+  

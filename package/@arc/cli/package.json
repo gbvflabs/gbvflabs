@@ -1,0 +1,8 @@
+{
+  "name": "@arc/cli",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync:init": "node ./src/index.ts"
+  }
+}
