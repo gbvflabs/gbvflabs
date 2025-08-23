@@ -3,7 +3,7 @@ import path from "node:path";
 import fs from "node:fs";
 const monorepoConfigFileMap = {
   packageJson: `{
-    "name": "frontend-web-mono-repo-v0",
+    "name": "@",
     "private": true,
     "scripts": {
         "sync": "pnpm --filter @arc/cli sync",
