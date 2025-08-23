@@ -3,6 +3,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "sync:init": "node ./src/index.ts"
+    "sync:init:monorepo": "node ./src/sync/init/monorepo/monorepo.ts"
   }
 }

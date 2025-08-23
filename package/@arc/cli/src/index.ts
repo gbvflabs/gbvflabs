@@ -1,6 +1,7 @@
-import { default as sync } from "./sync/sync.ts";
-import { default as init } from "./sync/init/init.ts";
+import sync from "./sync/sync";
 
-init();
+const cli = { sync };
 
-export { sync, init };
+cli.sync();
+
+export default cli;
