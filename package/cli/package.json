@@ -1,0 +1,42 @@
+{
+  "name": "@gbvflabs/cli",
+  "version": "0.1.0",
+  "private": false,
+  "bin": {
+    "gbvflabs": "src/index.ts"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --target node18 --platform node --sourcemap --clean",
+    "dev": "tsup src/index.ts --format esm --target node18 --platform node --watch --sourcemap",
+    "cli": "node ./src/index.ts"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=24.5.0"
+  },
+  "dependencies": {
+    "@arc/sync": "workspace:*"
+  },
+  "devDependencies": {
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
+  }
+}

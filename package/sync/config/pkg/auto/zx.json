@@ -1,0 +1,8 @@
+{
+    "description":"zx",
+    "keywords": ["zx"],
+    "devDependencies": {
+        "zx": "^8.5.4"
+    },
+    "dependencies": {}
+  }

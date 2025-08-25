@@ -1,8 +1,35 @@
 {
-    "name": "frontend-web-mono-repo-v0",
-    "private": true,
-    "scripts": {
-        "sync:init": "pnpm --filter @arc/cli sync:init"
-    }
-    }
-  
+  "name": "gbvflabs",
+  "version": "1.0.0",
+  "author": "GBVFtou",
+  "license": "ISC",
+  "description": "",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "files": [],
+  "packageManager": "pnpm@10.11.0",
+  "type": "module",
+  "exports": {
+    "./*": "./*"
+  },
+  "scripts": {
+    "build": "pnpm -F @gbvflabs/cli build",
+    "publish": "pnpm -F @gbvflabs/cli publish",
+    "login": "pnpm -F @gbvflabs/cli login",
+    "exec": "pnpm -F @gbvflabs/cli exec",
+    "dlx": "pnpm -F @gbvflabs/cli dlx",
+    "clean": "rimraf node_modules && pnpm -r clean",
+    "cli": "pnpm -F @arc/cli cli",
+    "clean": "rimraf node_modules && pnpm -r clean"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0"
+  }
+}

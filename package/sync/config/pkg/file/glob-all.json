@@ -1,0 +1,9 @@
+{
+    "description":"glob-all",
+    "keywords": ["glob-all"],
+    "devDependencies": {
+        "glob-all": "3.3.1"
+    },
+    "dependencies": {
+    }
+  }

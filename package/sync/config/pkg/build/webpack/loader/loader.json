@@ -1,0 +1,14 @@
+{
+    "description":"webpack/loader",
+    "keywords": ["webpack/loader"],
+    "devDependencies": {
+      "babel-loader": "^9.2.1",
+      "swc-loader": "^0.2.6",
+      "style-loader": "^4.0.0",
+      "css-loader": "^7.1.2",
+      "postcss-loader": "^8.1.1",
+      "thread-loader": "^4.0.4"
+    },
+    "dependencies": {
+    }
+  }

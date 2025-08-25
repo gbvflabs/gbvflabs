@@ -1,0 +1,9 @@
+{
+  "description":"core-js",
+  "keywords": ["core-js"],
+  "devDependencies": {
+    "core-js": "^3.42.0"
+  },
+  "dependencies": {
+  }
+}

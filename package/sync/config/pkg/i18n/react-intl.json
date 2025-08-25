@@ -1,0 +1,9 @@
+{
+    "description":"react-intl",
+    "keywords": ["react-intl"],
+    "devDependencies": {
+    },
+    "dependencies": {
+      "react-intl": "7.1.11"
+    }
+  }

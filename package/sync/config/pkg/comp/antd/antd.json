@@ -1,0 +1,11 @@
+{
+    "description":"antd",
+    "keywords": ["antd"],
+    "devDependencies": {
+    },
+    "dependencies": {
+        "antd": "^5.20.2",
+        "@ant-design/cssinjs": "^1.21.1",
+        "@ant-design/icons": "^5.4.0"
+    }
+  }

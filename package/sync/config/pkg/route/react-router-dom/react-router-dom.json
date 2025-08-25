@@ -1,0 +1,10 @@
+{
+  "description": "react-router-dom",
+  "keywords": ["react-router-dom"],
+  "devDependencies": {
+    "@types/react-router-dom": "5.3.3"
+  },
+  "dependencies": {
+    "react-router-dom": "^6.30.1"
+  }
+}

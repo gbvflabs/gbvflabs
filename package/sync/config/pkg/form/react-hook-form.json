@@ -1,0 +1,9 @@
+{
+    "description":"react-hook-form",
+    "keywords": ["react-hook-form"],
+    "devDependencies": {
+    },
+    "dependencies": {
+        "react-hook-form": "^7.52.2"
+    }
+  }

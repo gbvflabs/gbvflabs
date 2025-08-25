@@ -1,0 +1,9 @@
+{
+    "description":"deepmerge",
+    "keywords": ["deepmerge"],
+    "devDependencies": {
+    },
+    "dependencies": {
+        "deepmerge": "^4.3.1"
+    }
+  }

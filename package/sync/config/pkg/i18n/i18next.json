@@ -1,0 +1,9 @@
+{
+    "description":"i18next",
+    "keywords": ["i18next"],
+    "devDependencies": {
+    },
+    "dependencies": {
+        "i18next": "25.2.1"
+    }
+  }

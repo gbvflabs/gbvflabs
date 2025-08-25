@@ -1,0 +1,9 @@
+{
+    "description":"dayjs",
+    "keywords": ["dayjs"],
+    "devDependencies": {
+    },
+    "dependencies": {
+        "dayjs": "^1.11.13"
+    }
+  }

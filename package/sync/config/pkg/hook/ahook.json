@@ -1,0 +1,9 @@
+{
+    "description":"ahooks",
+    "keywords": ["ahooks"],
+    "devDependencies": {
+    },
+    "dependencies": {
+        "ahooks": "3.8.5"
+    }
+  }

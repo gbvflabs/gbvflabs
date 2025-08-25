@@ -1,0 +1,10 @@
+{
+  "description": "react-router",
+  "keywords": ["react-router"],
+  "devDependencies": {
+    "@types/react-router": "5.1.20"
+  },
+  "dependencies": {
+    "react-router": "^6.30.1"
+  }
+}

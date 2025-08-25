@@ -1,0 +1,9 @@
+{
+    "description":"qs",
+    "keywords": ["qs"],
+    "devDependencies": {
+    },
+    "dependencies": {
+        "qs": "^6.14.0"
+    }
+  }

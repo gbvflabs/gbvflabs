@@ -1,0 +1,10 @@
+{
+    "description":"qs",
+    "keywords": ["qs"],
+    "devDependencies": {
+        "@types/lodash-es": "^4.17.12"
+    },
+    "dependencies": {
+        "lodash-es": "^4.17.21"
+    }
+  }

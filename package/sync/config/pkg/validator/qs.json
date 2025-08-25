@@ -1,0 +1,9 @@
+{
+    "description":"validator",
+    "keywords": ["validator"],
+    "devDependencies": {
+    },
+    "dependencies": {
+        "validator": "^13.15.15"
+    }
+  }

@@ -1,0 +1,10 @@
+{
+    "description":"react-custom-scrollbars",
+    "keywords": ["react-custom-scrollbars"],
+    "devDependencies": {
+      "@types/react-custom-scrollbars": "^4.0.13"
+    },
+    "dependencies": {
+      "react-custom-scrollbars": "^4.2.1"
+    }
+  }

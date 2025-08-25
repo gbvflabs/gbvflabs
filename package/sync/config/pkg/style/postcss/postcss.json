@@ -1,0 +1,12 @@
+{
+    "description":"postcss",
+    "keywords": ["postcss"],
+    "devDependencies": {
+        "postcss": "^8.5.4",
+        "postcss-import": "^16.1.0",
+        "postcss-preset-env": "^10.2.4",
+        "cssnano": "^7.0.7"
+    },
+    "dependencies": {
+    }
+  }

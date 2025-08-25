@@ -1,0 +1,70 @@
+{
+  "description": "spec",
+  "keywords": ["spec"],
+  "type": "module",
+  "exports": {
+    "./*": "./*"
+  },
+  "engines": {
+    "node": ">=23.6.0",
+    "pnpm": ">=10.10.0"
+  },
+  "packageManager": "pnpm@10.11.0",
+  "scripts": {
+    "build:dev": "webpack serve --config ./config/build/webpack/dev.ts",
+    "build:prod": "webpack --config ./config/build/webpack/prod.ts",
+    "build:dev:analyze": "webpack --config ./config/build/webpack/analy.ts",
+    "build:prod:analyze": "webpack --config ./config/build/webpack/analy.ts",
+    "type:check": "",
+    "lint": "",
+    "format": "",
+    "test": "",
+    "watch": "",
+    "coverage": "",
+    "comp": "",
+    "version": "",
+    "ci": "",
+    "clean": "rimraf node_modules",
+    "memory": "cross-env LIMIT=6048 increase-memory-limit"
+  },
+  "dependencies": {
+    "@arc/share": "workspace:*",
+    "@arc/util": "workspace:*",
+    "@arc/core": "workspace:*",
+    "@arc/ref": "workspace:*",
+    "dompurify": "3.2.6",
+    "axios": "1.11.0",
+    "@tinymce/tinymce-react": "6.3.0",
+    "tinymce": "8.0.1",
+    "react-is": "19.1.1",
+    "react-pdf": "10.0.1",
+    "@react-pdf-viewer/core": "3.12.0",
+    "@react-pdf-viewer/default-layout": "3.12.0",
+    "pdfjs-dist": "5.4.54",
+    "react-virtualized": "9.22.6",
+    "react-window": "1.8.11",
+    "memoize-one": "6.0.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "11.0.4",
+    "@types/glob": "9.0.0",
+    "@types/inquirer": "9.0.9",
+    "@types/node": "^24.1.0",
+    "traverse": "link:@types/@babel/traverse",
+    "typescript": "5.9.2",
+    "boxen": "8.0.1",
+    "chalk": "5.5.0",
+    "fs-extra": "^11.3.0",
+    "inquirer": "12.9.0",
+    "simple-git": "^3.28.0",
+    "ts-morph": "^26.0.0",
+    "winston": "3.17.0",
+    "tesseract.js": "6.0.1"
+  },
+  "imports": {
+    "meta/": "./meta/",
+    "config/": "./config/",
+    "cache/": "./cache/",
+    "src/": "./src/"
+  }
+}

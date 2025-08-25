@@ -1,0 +1,8 @@
+{
+    "description":"node",
+    "keywords": ["node"],
+    "devDependencies": {
+        "@types/node": "^24.0.13"
+    },
+    "dependencies": {}
+  }

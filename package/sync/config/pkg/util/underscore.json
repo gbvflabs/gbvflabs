@@ -1,0 +1,9 @@
+{
+    "description":"underscore",
+    "keywords": ["underscore"],
+    "devDependencies": {
+    },
+    "dependencies": {
+        "underscore": "^1.13.7"
+    }
+  }

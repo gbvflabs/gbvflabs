@@ -1,0 +1,10 @@
+{
+    "description":"redux",
+    "keywords": ["redux"],
+    "devDependencies": {
+    },
+    "dependencies": {
+        "react-redux": "^9.1.2",
+        "@reduxjs/toolkit": "^2.2.7"
+    }
+  }

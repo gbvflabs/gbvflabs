@@ -1,0 +1,9 @@
+{
+    "description":"fs-extra",
+    "keywords": ["fs-extra"],
+    "devDependencies": {
+        "fs-extra": "^11.3.0"
+    },
+    "dependencies": {
+    }
+  }

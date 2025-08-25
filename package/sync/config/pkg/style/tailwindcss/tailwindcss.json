@@ -1,0 +1,11 @@
+{
+    "description":"postcss",
+    "keywords": ["postcss"],
+    "devDependencies": {
+        "tailwindcss": "^3.4.10",
+        "tailwindcss-line-clamp": "^1.0.5"
+    },
+    "dependencies": {
+        "tailwind-merge": "3.3.0"
+    }
+  }

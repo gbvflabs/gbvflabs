@@ -1,0 +1,9 @@
+{
+    "description":"react-activation",
+    "keywords": ["react-activation"],
+    "devDependencies": {
+    },
+    "dependencies": {
+      "react-activation": "^0.12.4"
+    }
+  }

@@ -1,0 +1,35 @@
+{
+  "name": "frontend-web-mono-repo-v0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.11.0",
+  "engines": {
+    "node": ">=23.6.0",
+    "pnpm": ">=10.10.0"
+  },
+  "scripts": {
+    "sync": "pnpm --filter @arc/sync sync",
+    "sync:pkg": "pnpm --filter @arc/sync sync:pkg",
+    "sync:auto": "pnpm --filter @arc/sync sync:auto",
+    "sync:type": "pnpm --filter @arc/sync sync:type",
+    "sync:all": "pnpm --filter @arc/sync sync:pkg && pnpm --filter @arc/sync sync:auto && pnpm --filter @arc/sync sync:type",
+    "build:dev": "pnpm --filter cervix build:dev",
+    "build:prod": "pnpm --filter cervix build:prod",
+    "build:dev:analyze": "pnpm -r build:dev:analyze",
+    "build:prod:analyze": "pnpm -r build:prod:analyze",
+    "type:check": "pnpm -r type:check",
+    "lint": "pnpm -r lint",
+    "format": "pnpm -r format",
+    "test": "pnpm -r test",
+    "watch": "pnpm -r watch",
+    "coverage": "pnpm -r coverage",
+    "comp": "pnpm -r comp",
+    "version": "pnpm -r version",
+    "ci": "pnpm -r ci",
+    "clean": "rimraf node_modules && pnpm -r clean",
+    "memory": "pnpm -r memory"
+  },
+  "dependencies": {
+    "@gbvflabs/cli": "workspace:*"
+  }
+}
