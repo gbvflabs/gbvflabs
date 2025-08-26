@@ -31,5 +31,6 @@
   },
   "dependencies": {
     "@gbvflabs/cli": "workspace:*"
-  }
+  },
+  "version": null
 }

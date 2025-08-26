@@ -27,3 +27,8 @@ Turbo/Nx 负责“任务编排与加速”。常见组合：pnpm + Turborepo 或
 
 node 平台兼容性
 pkg nexe
+
+pnpm changeset pre enter beta
+pnpm changeset version
+pnpm -r publish --tag beta --access public
+pnpm changeset pre exit

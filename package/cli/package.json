@@ -1,6 +1,6 @@
 {
   "name": "@gbvflabs/cli",
-  "version": "0.1.7",
+  "version": "0.1.2",
   "private": false,
   "bin": {
     "gbvflabs": "dist/index.js"
@@ -24,17 +24,15 @@
   "scripts": {
     "start": "node --watch src/index.ts",
     "build": "tsup",
-    "release:beta": "pnpm build && pnpm version prerelease --preid=beta && pnpm publish --tag beta",
-    "release:patch": "pnpm build && pnpm version patch && pnpm publish"
+    "prerelease": "pnpm build && pnpm version prerelease --preid=beta && pnpm publish --tag beta",
+    "release": "pnpm build && pnpm version patch && pnpm publish"
   },
   "publishConfig": {
     "access": "public"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=24.0.0"
   },
   "dependencies": {},
-  "devDependencies": {
-    "@types/node": "^18"
-  }
+  "devDependencies": {}
 }

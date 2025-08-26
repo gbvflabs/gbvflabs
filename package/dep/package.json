@@ -1,5 +1,5 @@
 {
-   "name": "@gbvflabs/dep",
+  "name": "@gbvflabs/dep",
   "dependencies": {
     "boxen": "8.0.1",
     "chalk": "5.5.0",
@@ -15,5 +15,6 @@
     "@types/inquirer": "9.0.9",
     "@types/node": "^24.1.0",
     "typescript": "5.9.2"
-  }
+  },
+  "version": null
 }

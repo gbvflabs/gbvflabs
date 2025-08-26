@@ -20,13 +20,11 @@
     "./*": "./*"
   },
   "scripts": {
-    "pkg:publish": "pnpm -F @gbvflabs/cli pkg:publish",
-    "pkg:version:patch": "pnpm -F @gbvflabs/cli pkg:version:patch",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "prerelease": "pnpm -F @gbvflabs/cli prerelease",
+    "release": "pnpm -F @gbvflabs/cli release",
     "build": "pnpm -F @gbvflabs/cli build",
-    "login": "pnpm -F @gbvflabs/cli login",
-    "exec": "pnpm -F @gbvflabs/cli exec",
-    "dlx": "pnpm -F @gbvflabs/cli dlx",
-    "cli": "pnpm -F @arc/cli cli",
     "clean": "rimraf node_modules && pnpm -r clean"
   },
   "devDependencies": {
