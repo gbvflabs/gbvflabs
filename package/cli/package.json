@@ -1,9 +1,9 @@
 {
   "name": "@gbvflabs/cli",
-  "version": "0.1.0",
+  "version": "0.1.7",
   "private": false,
   "bin": {
-    "gbvflabs": "src/index.ts"
+    "gbvflabs": "dist/index.js"
   },
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -13,30 +13,28 @@
     "README.md",
     "LICENSE"
   ],
+  "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
       "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
       "types": "./dist/index.d.ts"
     }
   },
-  "type": "module",
   "scripts": {
-    "build": "tsup src/index.ts --format esm --target node18 --platform node --sourcemap --clean",
-    "dev": "tsup src/index.ts --format esm --target node18 --platform node --watch --sourcemap",
-    "cli": "node ./src/index.ts"
+    "start": "node --watch src/index.ts",
+    "build": "tsup",
+    "release:beta": "pnpm build && pnpm version prerelease --preid=beta && pnpm publish --tag beta",
+    "release:patch": "pnpm build && pnpm version patch && pnpm publish"
   },
   "publishConfig": {
     "access": "public"
   },
   "engines": {
-    "node": ">=24.5.0"
+    "node": ">=18.0.0"
   },
-  "dependencies": {
-    "@arc/sync": "workspace:*"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "tsup": "^8.2.4",
-    "typescript": "^5.5.4"
+    "@types/node": "^18"
   }
 }

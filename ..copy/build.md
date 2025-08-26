@@ -24,3 +24,6 @@ Nx
 与 pnpm 的关系
 pnpm 负责依赖与 workspace 链接；
 Turbo/Nx 负责“任务编排与加速”。常见组合：pnpm + Turborepo 或 pnpm + Nx。
+
+node 平台兼容性
+pkg nexe

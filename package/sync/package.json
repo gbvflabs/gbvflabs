@@ -1,5 +1,5 @@
 {
-  "name": "@arc/sync",
+  "name": "@gbvflabs/sync",
   "private": true,
   "type": "module",
   "scripts": {

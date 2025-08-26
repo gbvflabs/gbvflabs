@@ -1,4 +1,5 @@
 {
+   "name": "@gbvflabs/dep",
   "dependencies": {
     "boxen": "8.0.1",
     "chalk": "5.5.0",
