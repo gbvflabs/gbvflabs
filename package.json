@@ -20,15 +20,16 @@
     "./*": "./*"
   },
   "scripts": {
+    "build": "pnpm -r build",
+    "type": "pnpm -r type",
+    "lint": "pnpm -r lint",
+    "format": "pnpm -r format",
+    "test": "pnpm -r test",
+    "ci": "pnpm -r ci",
     "changeset": "changeset",
     "version": "changeset version",
-    "prerelease": "pnpm -F @gbvflabs/cli prerelease",
-    "release": "pnpm -F @gbvflabs/cli release",
-    "build": "pnpm -F @gbvflabs/cli build",
+    "prerelease": "pnpm -r prerelease",
+    "release": "pnpm -r release",
     "clean": "rimraf node_modules && pnpm -r clean"
-  },
-  "devDependencies": {
-    "@changesets/cli": "^2.29.6",
-    "@types/node": "^24.3.0"
   }
 }
