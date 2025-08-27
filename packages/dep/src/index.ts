@@ -3,93 +3,43 @@ import * as url from "node:url";
 import * as path from "node:path";
 import * as fs from "node:fs";
 import * as childProcess from "node:child_process";
+export { os, url, path, fs, childProcess };
 
-import deepmerge from "deepmerge";
-import minimist from "minimist";
+export { default as deepmerge } from "deepmerge";
+export { default as minimist } from "minimist";
+export * as globby from "globby";
+export { default as fsExtra } from "fs-extra";
 
-// import glob from "glob";
-import globAll from "glob-all";
+export { default as simpleGit } from "simple-git";
+export { default as shellQuote } from "shell-quote";
+export { default as chalk } from "chalk";
+export { default as boxen } from "boxen";
+export { default as inquirer } from "inquirer";
 
-import fsExtra from "fs-extra";
+export * as tsMorph from "ts-morph";
+export * as babelTypes from "@babel/types";
+export * as babelParser from "@babel/parser";
+export { default as babelTraverse } from "@babel/traverse";
 
-import simpleGit from "simple-git";
-import shellQuote from "shell-quote";
-import chalk from "chalk";
-import boxen from "boxen";
-import inquirer from "inquirer";
+export { default as winston } from "winston";
 
-import * as tsMorph from "ts-morph";
-import "@babel/types";
-import * as babelParser from "@babel/parser";
-import * as babelTraverse from "@babel/traverse";
+export { default as unpluginAutoImportWebapck } from "unplugin-auto-import/webpack";
+export { default as webpack } from "webpack";
+export { merge as webpackMerge } from "webpack-merge";
 
-import winston from "winston";
-// import dotenv from "dotenv";
+export { default as htmlWebpackPlugin } from "html-webpack-plugin";
+export { default as terserWebpackPlugin } from "terser-webpack-plugin";
+export { PurgeCSSPlugin as purgeCSSWebpackPlugin } from "purgecss-webpack-plugin";
+export { default as miniCssExtractPlugin } from "mini-css-extract-plugin";
+export { default as cssMinimizerWebpackPlugin } from "css-minimizer-webpack-plugin";
+export { default as compressionWebpackPlugin } from "compression-webpack-plugin";
+export { default as copyWebpackPlugin } from "copy-webpack-plugin";
 
-import unpluginAutoImportWebapck from "unplugin-auto-import/webpack";
-import webpack from "webpack";
-import { merge as webpackMerge } from "webpack-merge";
+export { BundleAnalyzerPlugin as webpackBundleAnalyzer } from "webpack-bundle-analyzer";
+export { default as speedMeasureWebpackPlugin } from "speed-measure-webpack-plugin";
+export { default as webpackDashboard } from "webpack-dashboard";
 
-import htmlWebpackPlugin from "html-webpack-plugin";
-import terserWebpackPlugin from "terser-webpack-plugin";
-import { PurgeCSSPlugin as purgeCSSWebpackPlugin } from "purgecss-webpack-plugin";
-import miniCssExtractPlugin from "mini-css-extract-plugin";
-import cssMinimizerWebpackPlugin from "css-minimizer-webpack-plugin";
-import compressionWebpackPlugin from "compression-webpack-plugin";
-import copyWebpackPlugin from "copy-webpack-plugin";
-
-import { BundleAnalyzerPlugin as webpackBundleAnalyzer } from "webpack-bundle-analyzer";
-import speedMeasureWebpackPlugin from "speed-measure-webpack-plugin";
-import webpackDashboard from "webpack-dashboard";
-
-import autoprefixer from "autoprefixer";
-import postcssPresetEnv from "postcss-preset-env";
-import tailwindcss from "tailwindcss";
-import tailwindcssLineClamp from "tailwindcss-line-clamp";
-
-export default {
-  os,
-  url,
-  path,
-  fs,
-  childProcess,
-
-  deepmerge,
-  minimist,
-  // glob,
-  globAll,
-
-  fsExtra,
-
-  simpleGit,
-  chalk,
-  boxen,
-  inquirer,
-  shellQuote,
-
-  babelParser,
-  babelTraverse,
-  tsMorph,
-
-  // dotenv,
-  winston,
-
-  unpluginAutoImportWebapck,
-  webpack,
-  webpackMerge,
-  htmlWebpackPlugin,
-  terserWebpackPlugin,
-  purgeCSSWebpackPlugin,
-  miniCssExtractPlugin,
-  cssMinimizerWebpackPlugin,
-  compressionWebpackPlugin,
-  copyWebpackPlugin,
-  webpackBundleAnalyzer,
-  speedMeasureWebpackPlugin,
-  webpackDashboard,
-
-  autoprefixer,
-  postcssPresetEnv,
-  tailwindcss,
-  tailwindcssLineClamp,
-};
+export { default as autoprefixer } from "autoprefixer";
+export { default as postcssPresetEnv } from "postcss-preset-env";
+export { default as tailwindcss } from "tailwindcss";
+export { default as tailwindcssLineClamp } from "tailwindcss-line-clamp";

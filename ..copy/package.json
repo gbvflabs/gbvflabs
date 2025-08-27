@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "start": "node --watch src/index.ts",
+    "build": "tsup",
+    "type": "tsc --noEmit",
+    "lint": "eslint src",
+    "format": "prettier --write .",
+    "test": "jest",
+    "ci": "pnpm -r ci",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "prerelease": "pnpm build && pnpm version prerelease --preid=beta && pnpm publish --tag beta",
+    "release": "pnpm build && pnpm version patch && pnpm publish",
+    "pack": "pnpm  pack",
+    "add": "pnpm -r add",
+    "clean": "rimraf node_modules && rimraf dist"
+  }
+}

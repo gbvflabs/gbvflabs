@@ -30,6 +30,12 @@
     "version": "changeset version",
     "prerelease": "pnpm -r prerelease",
     "release": "pnpm -r release",
-    "clean": "rimraf node_modules && pnpm -r clean"
-  }
+    "link": "pnpm -r exec -- pnpm link --global",
+    "unlink": "pnpm -r exec -- pnpm unlink --global",
+    "clean": "rimraf node_modules && rimraf dist && pnpm -r clean"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.29.6"
+  },
+  "devDependencies": {}
 }

@@ -22,10 +22,10 @@
     }
   },
   "scripts": {
-    "start": "node --watch src/index.ts",
     "build": "tsup",
     "prerelease": "pnpm build && pnpm version prerelease --preid=beta && pnpm publish --tag beta",
-    "release": "pnpm build && pnpm version patch && pnpm publish"
+    "release": "pnpm build && pnpm version patch && pnpm publish",
+    "clean": "rimraf node_modules && rimraf dist"
   },
   "publishConfig": {
     "access": "public"
@@ -34,6 +34,8 @@
     "node": "24",
     "pnpm": "10"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@gbvflabs/dep": "workspace:^"
+  },
   "devDependencies": {}
 }
