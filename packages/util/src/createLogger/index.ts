@@ -1,12 +1,5 @@
-
 import * as dep from "@gbvflabs/dep"
 const {winston} = dep
-
-declare module 'winston' {
-  interface Logger {
-    success: import("winston").LeveledLogMethod
-  }
-}
 
 export default function createLogger(dirname:string,label?:string){
   return winston.createLogger({
@@ -32,12 +25,12 @@ export default function createLogger(dirname:string,label?:string){
         }):[])
       ],
       exceptionHandlers:[
-        dep.winston.transports.File &&
-        new dep.winston.transports.File({ dirname, filename: "exceptions.log" }),
+          winston.transports.File &&
+        new winston.transports.File({ dirname, filename: "exceptions.log" }),
       ].filter(Boolean),
       rejectionHandlers: [
-        dep.winston.transports.File &&
-          new dep.winston.transports.File({ dirname, filename: "rejections.log" }),
+        winston.transports.File &&
+          new winston.transports.File({ dirname, filename: "rejections.log" }),
       ].filter(Boolean),
   })
 }

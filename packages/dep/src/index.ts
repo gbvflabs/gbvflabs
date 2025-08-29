@@ -6,17 +6,19 @@ import * as childProcess from "node:child_process";
 export { os, url, path, fs, childProcess };
 
 export { default as deepmerge } from "deepmerge";
-export { default as minimist } from "minimist";
+
 export * as globby from "globby";
 export { default as fsExtra } from "fs-extra";
-export { default as yargs } from "yargs";
 export { default as yaml } from "yaml";
 
-export { default as simpleGit } from "simple-git";
 export { default as shellQuote } from "shell-quote";
+export { default as minimist } from "minimist";
+export { default as simpleGit } from "simple-git";
 export { default as chalk } from "chalk";
 export { default as boxen } from "boxen";
+export { default as yargs } from "yargs";
 export { default as inquirer } from "inquirer";
+export { default as cac } from "cac";
 
 export * as tsMorph from "ts-morph";
 export * as babelTypes from "@babel/types";

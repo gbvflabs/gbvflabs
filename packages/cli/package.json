@@ -6,7 +6,7 @@
     "gbvflabs": "dist/index.js"
   },
   "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist",
@@ -16,14 +16,15 @@
   "type": "module",
   "exports": {
     ".": {
+      "development": "./src/index.ts",
       "types": "./dist/index.d.ts",
       "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
+      "import": "./dist/index.js"
     }
   },
   "scripts": {
     "build": "tsup",
-    "clean": "rimraf node_modules && rimraf dist"
+    "clean": "rimraf node_modules && rimraf dist && mkdir -p dist"
   },
   "publishConfig": {
     "access": "public"
@@ -34,7 +35,9 @@
   },
   "dependencies": {
     "@gbvflabs/dep": "workspace:^",
-    "@gbvflabs/core": "workspace:^"
+    "@gbvflabs/util": "workspace:^",
+    "@gbvflabs/core": "workspace:^",
+    "@gbvflabs/sync": "workspace:^"
   },
   "devDependencies": {}
 }

@@ -8,5 +8,8 @@ export default defineConfig({
   platform: "node",
   sourcemap: true,
   clean: true,
-  bundle: false,
+  bundle: true,
+  esbuildOptions(options) {
+    options.conditions = ["node", "import", "module", "default"];
+  },
 });

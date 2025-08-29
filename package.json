@@ -20,7 +20,8 @@
     "./*": "./*"
   },
   "scripts": {
-    "start":"NODE_OPTIONS=--conditions=development npx tsx packages/cli/src/index.ts",
+   "add": "pnpm --filter @gbvflabs/dep add",
+    "start": "node --conditions=development ./packages/cli/src/index.ts",
     "build": "pnpm -r build",
     "type": "pnpm -r type",
     "lint": "pnpm -r lint",
@@ -31,9 +32,10 @@
     "release": "pnpm changeset && pnpm changeset version && pnpm -r build && pnpm changeset publish ",
     "link": "pnpm -r exec -- pnpm link --global",
     "unlink": "pnpm -r exec -- pnpm unlink --global",
-    "clean": "rimraf node_modules && rimraf dist && pnpm -r clean"
+    "clean": "rimraf node_modules && rimraf pnpm-lock.yaml && pnpm -r clean"
   },
   "dependencies": {
-    "@gbvflabs/cli": "workspace:^"
+    "@gbvflabs/cli": "workspace:^",
+    "@gbvflabs/dep": "workspace:^"
   }
 }

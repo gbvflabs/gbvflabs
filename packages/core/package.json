@@ -25,6 +25,7 @@
   "type": "module",
   "exports": {
     ".": {
+      "development": "./src/index.ts",
       "types": "./dist/index.d.ts",
       "require": "./dist/index.cjs",
       "import": "./dist/index.js"
@@ -32,7 +33,7 @@
   },
   "scripts": {
     "build": "tsup",
-    "clean": "rimraf node_modules && rimraf dist"
+    "clean": "rimraf node_modules && rimraf dist && mkdir -p dist"
   },
   "publishConfig": {
     "access": "public"

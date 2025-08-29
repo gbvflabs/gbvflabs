@@ -25,6 +25,7 @@
   "type": "module",
   "exports": {
     ".": {
+      "development": "./src/index.ts",
       "types": "./dist/index.d.ts",
       "require": "./dist/index.cjs",
       "import": "./dist/index.js"
@@ -32,7 +33,7 @@
   },
   "scripts": {
     "build": "tsup",
-    "clean": "rimraf node_modules && rimraf dist"
+    "clean": "rimraf node_modules && rimraf dist && mkdir -p dist"
   },
   "publishConfig": {
     "access": "public"
@@ -42,6 +43,7 @@
     "pnpm": "10"
   },
   "devDependencies": {
+    "@types": "link:@types",
     "@types/babel__traverse": "7.28.0",
     "@types/deepmerge": "2.2.3",
     "@types/fs-extra": "11.0.4",
@@ -55,11 +57,13 @@
   "dependencies": {
     "@babel/parser": "7.28.3",
     "@babel/traverse": "7.28.3",
+    "@babel/types": "7.28.2",
     "@changesets/cli": "^2.29.6",
     "@swc/core": "1.13.5",
     "@types/shell-quote": "1.7.5",
     "autoprefixer": "10.4.21",
     "boxen": "8.0.1",
+    "cac": "6.7.14",
     "chalk": "5.5.0",
     "compression-webpack-plugin": "11.1.0",
     "copy-webpack-plugin": "13.0.1",
@@ -78,6 +82,7 @@
     "speed-measure-webpack-plugin": "1.5.0",
     "tailwindcss": "4.1.12",
     "tailwindcss-line-clamp": "1.0.5",
+    "terser-webpack-plugin": "5.3.14",
     "ts-morph": "^26.0.0",
     "tsup": "8.5.0",
     "typescript": "5.9.2",
@@ -87,6 +92,7 @@
     "webpack-dashboard": "3.3.8",
     "webpack-merge": "6.0.1",
     "winston": "3.17.0",
-    "yaml": "2.8.1"
+    "yaml": "2.8.1",
+    "yargs": "18.0.0"
   }
 }

@@ -1,8 +1,8 @@
-import * as dep from "@gbvflabs/dep";
+import {chalk,boxen} from "@gbvflabs/dep";
 import {type Options} from "boxen"
 
 type LogType = "success" | "info" | "warn" | "error";
-type Config = {boxenOptions:Options,chalkInstance?:typeof dep.chalk}
+type Config = {boxenOptions:Options,chalkInstance?:typeof chalk}
 const baseConfig:Config = {
   boxenOptions:{
     titleAlignment: "center",
@@ -18,7 +18,7 @@ const configMap:Record<LogType,Config> = {
       borderColor: "green",
       backgroundColor: "green",
     },
-    chalkInstance:dep.chalk.green.bold,
+    chalkInstance:chalk.green.bold,
   },
   info:{
     boxenOptions:{
@@ -47,7 +47,7 @@ const log = (type:keyof typeof configMap,msg: string | string[])=>{
   const config = configMap[type];
   const text =  Array.isArray(msg) ? msg.join("\n") : msg;
   console.log(
-    dep.boxen(config.chalkInstance?.(text), {
+        boxen(config.chalkInstance?.(text), {
       ...baseConfig.boxenOptions,
       ...config.boxenOptions,
     })

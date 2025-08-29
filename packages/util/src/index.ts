@@ -1,2 +1,2 @@
-export {default as createLogger} from "./createLogger"
-export {default as console} from "./console"
+export {default as createLogger} from "./createLogger/index.ts"
+export {default as Console} from "./console/index.ts"

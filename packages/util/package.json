@@ -25,14 +25,27 @@
   "type": "module",
   "exports": {
     ".": {
+      "development": "./src/index.ts",
       "types": "./dist/index.d.ts",
       "require": "./dist/index.cjs",
       "import": "./dist/index.js"
+    },
+    "./console": {
+      "development": "./src/console/index.ts",
+      "types": "./dist/console/index.d.ts",
+      "import": "./dist/console/index.js",
+      "require": "./dist/console/index.cjs"
+    },
+    "./createLogger": {
+      "development": "./src/createLogger/index.ts",
+      "types": "./dist/createLogger/index.d.ts",
+      "import": "./dist/createLogger/index.js",
+      "require": "./dist/createLogger/index.cjs"
     }
   },
   "scripts": {
     "build": "tsup",
-    "clean": "rimraf node_modules && rimraf dist"
+    "clean": "rimraf node_modules && rimraf dist && mkdir -p dist"
   },
   "publishConfig": {
     "access": "public"
