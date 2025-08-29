@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": false,
   "bin": {
-    "gbvflabs": "dist/index.js"
+    "gbvflabs": "src/index.js"
   },
   "main": "dist/index.cjs",
   "module": "dist/index.js",

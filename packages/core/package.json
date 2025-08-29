@@ -45,6 +45,8 @@
   "devDependencies": {
   },
   "dependencies": {
-    "@gbvflabs/dep": "workspace:^"
+    "@gbvflabs/dep": "workspace:^",
+    "@gbvflabs/util": "workspace:^"
+
   }
 }

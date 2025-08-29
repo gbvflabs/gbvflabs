@@ -1,0 +1,90 @@
+
+import {path,} from "@gbvflabs/dep"
+
+const auto = [
+    "server",
+    "asset",
+    "type",
+    "env",
+    "const",
+    "local",
+    "util",
+    "helper",
+    "hook",
+    "doc",
+    "entry",
+    "app",
+    "router",
+    "route",
+    "store",
+    "layout",
+    "page",
+    "view",
+    "comp",
+]
+
+export default function pathCtor({root,local}: {
+    root:string
+    local:string
+}){
+    return {
+            $root:root,
+            $pkg:path.resolve(root,"./package.json"),
+            $dep:path.resolve(root,"./node_modules"),
+            $tsBaseConfig: path.resolve(root, "./tsconfig.base.json"),
+            $tsconfig: path.resolve(root, "./tsconfig.json"),
+            $twconfig: path.resolve(root, "./tailwind.config.json"),
+            $meta: path.resolve(root, "./meta.json"),
+            $config: path.resolve(root, "./config"),
+            $script: path.resolve(root, "./script"),
+            $cache: path.resolve(root, "./cache"),
+            $package: path.resolve(root, "./package"),
+            "@host": path.resolve(root, "./package/@host"),
+
+            local,
+            pkg: path.resolve(local, "./package.json"),
+            dep: path.resolve(local, "./node_modules"),
+            tsconfig: path.resolve(local, "./tsconfig.json"),
+            meta: path.resolve(local, "./meta.json"),
+            config: path.resolve(local, "./config"),
+            script: path.resolve(local, "./config"),
+            "config/build": path.resolve(local, "./config/build"),
+            "config/style": path.resolve(local, "./config/style"),
+            "config/script": path.resolve(local, "./config/script"),
+            "config/lint": path.resolve(local, "./config/lint"),
+            "config/format": path.resolve(local, "./config/format"),
+            "config/comp": path.resolve(local, "./config/comp"),
+            "config/test": path.resolve(local, "./config/test"),
+            "config/ci": path.resolve(local, "./config/ci"),
+            cache: path.resolve(local, "./cache"),
+            "cache/build": path.resolve(local, "./cache/build"),
+            "cache/lint": path.resolve(local, "./cache/lint"),
+            "cache/type": path.resolve(local, "./cache/type"),
+            "cache/logger": path.resolve(local, "./cache/logger"),
+
+            auto,
+            src: path.resolve(local, "./src"),
+            server: path.resolve(local, "./src/server"),
+            public: path.resolve(local, "./src/public"),
+            asset: path.resolve(local, "./src/asset"),
+            type: path.resolve(local, "./src/type"),
+            env: path.resolve(local, "./src/env"),
+            const: path.resolve(local, "./src/const"),
+            locale: path.resolve(local, "./src/locale"),
+            util: path.resolve(local, "./src/util"),
+            helper: path.resolve(local, "./src/helper"),
+            hook: path.resolve(local, "./src/hook"),
+            doc: path.resolve(local, "./src/doc"),
+            entry: path.resolve(local, "./src/entry"),
+            app: path.resolve(local, "./src/app"),
+            router: path.resolve(local, "./src/router"),
+            route: path.resolve(local, "./src/route"),
+            store: path.resolve(local, "./src/store"),
+            layout: path.resolve(local, "./src/layout"),
+            page: path.resolve(local, "./src/page"),
+            view: path.resolve(local, "./src/view"),
+            comp: path.resolve(local, "./src/comp"),
+    }
+}
+
+

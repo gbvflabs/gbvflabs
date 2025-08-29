@@ -1,8 +1,21 @@
-import { yaml, path, fsExtra, globby, inquirer } from "@gbvflabs/dep";
+import {syncConfig} from "@gbvflabs/core"
+import {
+	fsExtra,url,path,
+	 yaml, globby, inquirer,cac
+} from "@gbvflabs/dep";
 import { Console } from "@gbvflabs/util";
 
 
+syncConfig()
+
 // const cli = cac("gbvflabs");
+// cli.option('--sync [type]','choose a cmd',{
+// 	default:"init"
+// })
+
+// const parsed = cli.parse();
+// console.log(parsed)
+
 
 // cli
 // 	.command("sync", "项目同步/初始化向导")
