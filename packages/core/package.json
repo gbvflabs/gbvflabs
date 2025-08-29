@@ -1,4 +1,49 @@
 {
   "name": "@gbvflabs/core",
-  "version": null
+  "version": "0.0.0",
+  "private": false,
+  "author": "GBVFtou",
+  "license": "ISC",
+  "description": "",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "clean": "rimraf node_modules && rimraf dist"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": "24",
+    "pnpm": "10"
+  },
+  "devDependencies": {
+  },
+  "dependencies": {
+    "@gbvflabs/dep": "workspace:^"
+  }
 }

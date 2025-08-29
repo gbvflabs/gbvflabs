@@ -1,5 +1,4 @@
 import { defineConfig } from "tsup";
-
 export default defineConfig({
   entry: ["src/index.ts"],
   outDir: "dist",
@@ -9,6 +8,5 @@ export default defineConfig({
   platform: "node",
   sourcemap: true,
   clean: true,
-  banner: { js: "#!/usr/bin/env node" },
-  external: [],
+  bundle: false,
 });

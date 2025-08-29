@@ -1,6 +1,6 @@
 {
   "name": "@gbvflabs/dep",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "private": false,
   "author": "GBVFtou",
   "license": "ISC",
@@ -15,7 +15,7 @@
   },
   "homepage": "",
   "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist",
@@ -25,14 +25,13 @@
   "type": "module",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/index.js"
     }
   },
   "scripts": {
-    "prerelease": "pnpm build && pnpm version prerelease --preid=beta && pnpm publish --tag beta",
-    "release": "pnpm build && pnpm version patch && pnpm publish",
+    "build": "tsup",
     "clean": "rimraf node_modules && rimraf dist"
   },
   "publishConfig": {
@@ -56,34 +55,38 @@
   "dependencies": {
     "@babel/parser": "7.28.3",
     "@babel/traverse": "7.28.3",
+    "@changesets/cli": "^2.29.6",
+    "@swc/core": "1.13.5",
     "@types/shell-quote": "1.7.5",
+    "autoprefixer": "10.4.21",
     "boxen": "8.0.1",
     "chalk": "5.5.0",
     "compression-webpack-plugin": "11.1.0",
     "copy-webpack-plugin": "13.0.1",
     "css-minimizer-webpack-plugin": "7.0.2",
+    "deepmerge": "^4.3.1",
     "fs-extra": "^11.3.1",
     "globby": "14.1.0",
     "html-webpack-plugin": "5.6.4",
     "inquirer": "12.9.0",
     "merge": "2.1.1",
     "mini-css-extract-plugin": "2.9.4",
+    "postcss-preset-env": "10.3.0",
     "purgecss-webpack-plugin": "7.0.2",
     "shell-quote": "1.8.3",
     "simple-git": "^3.28.0",
+    "speed-measure-webpack-plugin": "1.5.0",
+    "tailwindcss": "4.1.12",
+    "tailwindcss-line-clamp": "1.0.5",
     "ts-morph": "^26.0.0",
     "tsup": "8.5.0",
     "typescript": "5.9.2",
     "unplugin-auto-import": "20.0.0",
     "webpack": "5.101.3",
+    "webpack-bundle-analyzer": "4.10.2",
+    "webpack-dashboard": "3.3.8",
     "webpack-merge": "6.0.1",
     "winston": "3.17.0",
-    "speed-measure-webpack-plugin": "1.5.0",
-    "webpack-dashboard": "3.3.8",
-    "autoprefixer": "10.4.21",
-    "postcss-preset-env": "10.3.0",
-    "tailwindcss": "4.1.12",
-    "tailwindcss-line-clamp": "1.0.5",
-    "webpack-bundle-analyzer": "4.10.2"
+    "yaml": "2.8.1"
   }
 }

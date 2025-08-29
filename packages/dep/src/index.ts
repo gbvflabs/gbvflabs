@@ -9,6 +9,8 @@ export { default as deepmerge } from "deepmerge";
 export { default as minimist } from "minimist";
 export * as globby from "globby";
 export { default as fsExtra } from "fs-extra";
+export { default as yargs } from "yargs";
+export { default as yaml } from "yaml";
 
 export { default as simpleGit } from "simple-git";
 export { default as shellQuote } from "shell-quote";
